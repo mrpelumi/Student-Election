@@ -10,6 +10,7 @@ const App = () => {
 
   return (
     <Routes>
+      <Route index element={<Login />} />
       <Route path='/signup' element={<SignUp />} />
       <Route path='/login' element={<Login />} />
       <Route path='/vote' element={<Vote />} />
