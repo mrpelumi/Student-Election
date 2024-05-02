@@ -1,0 +1,54 @@
+.header-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  background: transparent;
+  background-color: rgba(79, 77, 77, $alpha: 0.3);
+  backdrop-filter: blur(7px);
+  color: rgb(235, 223, 223);
+}
+
+.logo-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+
+  span{
+    font-size: 4rem;
+    font-weight: bold;
+  }
+}
+
+.subtitle-container{
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (max-width:893px){
+  .header-container{
+    padding: 3rem;
+  }
+  .logo-container{
+    span{
+      font-size: 2.5rem;
+    }
+  }
+  .subtitle-container{
+    margin-top: -1.2rem;
+    width: 100%;
+    text-align: center;
+    
+    span{
+      font-size: 1.2rem;
+      margin-left: 2.4rem;
+    }
+  }
+}

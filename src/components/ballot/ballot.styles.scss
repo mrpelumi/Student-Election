@@ -1,0 +1,39 @@
+.main-ballot-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  padding: 0.7rem;
+}
+.ballot-form{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+.ballot-container{
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  height: 19rem;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem;
+
+  input[type="radio"]{
+    accent-color: green;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width:893px) {
+  .main-ballot-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .ballot-container{
+    width: auto;
+  }
+}
